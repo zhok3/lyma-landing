@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+:root {
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+a[class] {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul[class],
+ol[class] {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 84.75em;
+    margin: 0 auto;
+    padding: 0.9375em;
+}
+
+h1:not(.footer h1),
+h2:not(.footer h2),
+h3:not(.footer h3),
+h4:not(.footer h4),
+h5:not(.footer h5),
+h6:not(.footer h6) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.link-btn {
+    font-size: 0.875rem;
+    letter-spacing: 0.15em;
+    line-height: 1.43;
+    border: 1px solid #fff;
+    display: inline-block;
+
+    transition: all 0.15s;
+
+    animation-name: button-show;
+    animation-duration: 2s;
+
+}
+
+.link-supplement {
+    padding: 0.57em 3.43em;
+}
+
+.link-laser {
+    padding: 0.57em 5.7em;
+}
+
+.link-btn:hover {
+    border-color: #d86e6e;
+    color: #d86e6e;
+}
+
+.burger-menu {
+    background-color: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.nav .nav-mobile {
+
+
+    transform: translateY(-100%);
+    font-size: 0.8rem;
+    line-height: 1.2;
+    letter-spacing: 0.167em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 3em;
+
+    a {
+        transition: all 0.3s;
+    }
+
+    a:not(.nav--btn):hover {
+        color: #636363;
+    }
+}
